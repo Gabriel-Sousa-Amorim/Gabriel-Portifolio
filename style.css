@@ -1,62 +1,91 @@
-@charset "utf-8"; 
- * { 
-   margin: 0; 
-   padding: 10px; 
-   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; 
-   transition: all 0.275s; 
- } 
- html, 
- body { 
-   padding: 0; 
-   width: 100%; 
-   color-scheme: dark; 
- } 
- header { 
-   padding: 5px; 
-   background-color: #002; 
-   color: white; 
- } 
- header:hover { 
-   padding: 10px; 
-   background-color: #014; 
- }
- .nav-1 ul {
-   display: grid; 
-   grid-template-columns: repeat(3, 3fr); 
- }
- .nav-1 li { 
-   list-style: none; 
- } 
- ul li a { 
-   display:block;
-   text-align: center; 
-   background-color: #002; 
-   border-radius: 1vw; 
-   text-decoration: none; 
- } 
- ul li a:hover { 
-   background-color: #003; 
-   padding:3vw; 
-   text-decoration: underline; 
- }
- .nav-1 > a:visited { 
-     color: rgb(165, 165, 255);
-  } 
-  
- @media (max-width: 767px) { 
-   header { 
-     text-align: center; 
-     font-size: 10px; 
-     margin: 0; 
-   } 
-   .nav-1 ul {
-       display:block;
-   }
-   .nav-1 > a { 
-     display: block; 
-     margin: 1vw 0; 
-   } 
-   .nav-1 > a:hover { 
-     padding: 15px;
-   } 
- }
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  transition: all 0.275s linear;
+  color: white;
+}
+
+html,
+body {
+  padding: 0;
+  width: 100%;
+  color-scheme: dark;
+}
+
+header {
+  text-align: center;
+  padding: 5px;
+  background-color: #002;
+}
+
+header:hover {
+  padding: 10px;
+  background-color: #014;
+}
+
+.nav-1 ul {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
+.nav-1 li {
+  list-style: none;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  background-color: #002;
+  border-radius: 1vw;
+  text-decoration: none;
+  color: rgb(186, 184, 255);
+}
+
+ul li a:hover {
+  background-color: #003;
+  text-decoration: underline;
+}
+
+.nav-1>a:visited {
+  color: rgb(255, 147, 215);
+}
+
+.information {
+  margin: 0px 1vw;
+  padding: 0px 20px;
+  border-radius: 1vw;
+  background-color: #1a1a1a;
+}
+.out-list {
+  list-style-position: outside;
+}
+.inner-list {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+@media (max-width: 767px) {
+  header {
+    font-size: 10px;
+    margin: 0;
+  }
+  .nav-1 ul {
+    display: block;
+  }
+  .nav-1>a {
+    display: block;
+    margin: 1vw 0;
+  }
+  ul li a:hover {
+    padding: 3vw;
+  }
+  .information {
+    text-align: center;
+  }
+  .information ul li {
+      list-style-type: none;
+  }
+}
