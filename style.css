@@ -6,6 +6,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   transition: all 0.275s linear;
   color: white;
+  box-sizing: border-box;
 }
 
 html,
@@ -19,11 +20,13 @@ header {
   text-align: center;
   padding: 5px;
   background-color: #002;
+  border-bottom: 1px solid transparent;
 }
 
 header:hover {
   padding: 10px;
   background-color: #014;
+  border-bottom: 1px solid aquamarine;
 }
 
 .nav-1 ul {
@@ -39,14 +42,17 @@ ul li a {
   display: block;
   text-align: center;
   background-color: #002;
-  border-radius: 1vw;
+  border-radius: 10px;
   text-decoration: none;
   color: rgb(186, 184, 255);
+  border: 1px solid transparent;
+
 }
 
 ul li a:hover {
   background-color: #003;
   text-decoration: underline;
+  border: 1px solid aquamarine;
 }
 
 .nav-1>a:visited {
@@ -56,16 +62,26 @@ ul li a:hover {
 .information {
   margin: 0px 1vw;
   padding: 0px 20px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.certificates {
+  margin: 1vw 1vw;
+  padding: 0px 20px;
   border-radius: 1vw;
   background-color: #1a1a1a;
 }
-.out-list {
-  list-style-position: outside;
+.certificates ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-.inner-list {
-  list-style-type: square;
-  list-style-position: outside;
+.certificates li {
+  list-style-type: none;
 }
+
 
 @media (max-width: 767px) {
   header {
@@ -83,9 +99,9 @@ ul li a:hover {
     padding: 3vw;
   }
   .information {
-    text-align: center;
+    font-size: 10px;
   }
-  .information ul li {
-      list-style-type: none;
+  .certificates {
+    font-size: 9px;
   }
 }
