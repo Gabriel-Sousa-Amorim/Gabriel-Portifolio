@@ -3,10 +3,10 @@
 
 :root {
     --color-white:#efefef;
-    --color-cyan:#F15A59;
-    --color-light-blue:#ED2B2A;
-    --color-blue:#D21312;
-    --color-black:#070A52;
+    --color-cyan:#8F43EE;
+    --color-light-blue:#F0EB8D;
+    --color-blue:#413543;
+    --color-black:#2D2727;
     --transition: all 0.2s;
 }
 * {
@@ -18,18 +18,18 @@
     font-weight: 900;
 }
 *::selection {
-    background-color: var(--color-light-blue);
+    background-color: #0aF;
     color: var(--color-white);
 }
 html, body {
     background-color: var(--color-black);
-    color: var(--color-white);
+    color: var(--color-light-blue);
 }
 i.bi{
     margin-inline:7px ;
 }
 #header-container {
-    height: 50vh;
+    height: 70vh;
     padding: 5vh;
     display: flex;
     flex-wrap: wrap;
@@ -56,16 +56,23 @@ i.bi{
 }
 #social-media-nav>a{
     margin-inline:5px ;
-    color: var(--color-blue);
+    color: var(--color-cyan);
     font-size: 30px;
 }
 
 #social-media-nav>a:hover {
-    background-color: var(--color-blue);
-    color: var(--color-black);
+    background-color: var(--color-cyan);
+    color: var(--color-light-blue);
     padding: 5px;
     border-radius: 5px;
     font-size: 35px;
+}
+#language-container {
+    display: flexbox;
+    background-color: var(--color-blue);
+}
+#language-container>img {
+    width: 20px;
 }
 .section-nav-container {
     display:flex;
@@ -73,8 +80,9 @@ i.bi{
     gap: 0;
 }
 #nav-bar-container {
-    background-color: var(--color-blue);
+    background-color: var(--color-cyan);
     padding-block: 10px ;
+    z-index: 10;
 }
 #nav-bar-container>ul {
     display: flex;
@@ -89,25 +97,27 @@ i.bi{
     text-align: center;
 }
 #nav-bar-container>ul li a {
-    color: var(--color-black);
+    color: var(--color-light-blue);
     text-decoration: none;
     font-size: 22px;
-
+    
 }
 #nav-bar-container>ul li a:hover {
     padding: 5px;
     border-radius: 5px;
     font-size: 25px;
-    background-color: var(--color-black);
-    color: var(--color-blue);
+    background-color: var(--color-light-blue);
+    color: var(--color-cyan);
 }
 
 .navbar-wave {
 width: 100%;
-filter: drop-shadow(0px 0px 20px var(--color-blue));
+z-index: 0;
+filter: drop-shadow(0px 0px 20px var(--color-cyan));
 }
+
 .navbar-wave>path {
-fill: var(--color-blue);
+fill: var(--color-cyan);
 }
 .main-margin {
     margin: 20px 100px;
@@ -141,9 +151,11 @@ fill: var(--color-blue);
     flex: 1;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
     background-color: var(--color-blue);
     color: var(--color-light-blue);
 }
 .Certificate-img {
+    border-radius: 10px;
     width: 55%;
 }
