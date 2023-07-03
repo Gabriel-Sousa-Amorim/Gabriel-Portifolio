@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio Gabriel" />
+    <meta name="author" content="Gabriel Sousa Amorim" />
+    <meta name="description" content="Gabriel Sousa Portfolio" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -11,48 +13,45 @@
     <link rel="stylesheet" href="style.css" />
     <title>Gabriel Portfolio</title>
   </head>
-
   <body>
     <header id="header-container">
       <div>
-        <span class="heading-title"></span>
+        <!--Título da página-->
+        <div>
+          <span id="heading-title"></span>
+        </div>
+
+        <!--Subítulo da página-->
         <p class="justify-text">
           Scroll down to read <a id="Link-header" href="#About-Me">About me</a>.
         </p>
       </div>
-      <nav id="social-media-nav">
-        <a
-          target="_blank"
-          class="bi bi-github"
-          href="https://github.com/Gabriel-Sousa-Amorim"
-        ></a>
-        <a
-          target="_blank"
-          class="bi bi-linkedin"
-          href="https://www.linkedin.com/in/gabriel-sousa-amorim/"
-        ></a>
-        <a
-          target="_blank"
-          class="bi bi-stack-overflow"
-          href="https://stackoverflow.com/users/21165913/gabriel-sousa-a-rodrigues"
-        ></a>
-      </nav>
-      <div id="language-container">
-        <img src="./Assets/Flag_of_English.svg" alt="">
-        <img src="./Assets/Flag_of_Brazil.svg" alt="">
-      </div>
+
+      <section id="second-container">
+        <select class="second-container-child" name="" id="">
+          <option value="en">🇬🇧 English</option>
+          <option value="pt-br">🇧🇷 Português Brasil</option>
+        </select>
+        <nav class="second-container-child" id="social-media-nav">
+          <a
+            target="_blank"
+            class="bi bi-github"
+            href="https://github.com/Gabriel-Sousa-Amorim"
+          ></a>
+          <a
+            target="_blank"
+            class="bi bi-linkedin"
+            href="https://www.linkedin.com/in/gabriel-sousa-amorim/"
+          ></a>
+          <a
+            target="_blank"
+            class="bi bi-stack-overflow"
+            href="https://stackoverflow.com/users/21165913/gabriel-sousa-a-rodrigues"
+          ></a>
+        </nav>
+      </section>
     </header>
-    <section class="section-nav-container">
-    <svg
-      class="navbar-wave"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill-opacity="1"
-        d="M0,320L80,298.7C160,277,320,235,480,234.7C640,235,800,277,960,293.3C1120,309,1280,299,1360,293.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-      ></path>
-    </svg>
+
     <nav id="nav-bar-container">
       <ul>
         <li><a class="bi bi-person" href="#About-Me">About me</a></li>
@@ -60,17 +59,6 @@
         <li><a class="bi bi-patch-check-fill" href="">Certifications</a></li>
       </ul>
     </nav>
-    <svg
-      class="navbar-wave"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill-opacity="1"
-        d="M0,192L48,181.3C96,171,192,149,288,117.3C384,85,480,43,576,48C672,53,768,107,864,138.7C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
-  </section>
     <main>
       <article id="About-Me" class="article-container main-margin">
         <div class="article-child">
@@ -100,20 +88,62 @@
             veritatis assumenda recusandae!
           </p>
         </div>
-        <div class="article-child"></div>
-        <div class="article-child"></div>
-        <div class="article-child">
-          <h1>Some of my Projects</h1>
-          <p class="justify-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            cum explicabo exercitationem delectus. Veniam, dolore assumenda
-            distinctio ullam laborum voluptatem? Error quas cumque repudiandae
-            dolores ut quisquam illum eos odit! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Doloribus at neque eius consequatur
-            id aut ipsum nobis sunt maiores doloremque architecto, ducimus in
-            autem, nihil debitis, eum voluptates voluptatem eaque!
-          </p>
+        <div class="article-child img-div">
+          <img width='90%' src="./Assets/Flag_of_Brazil.svg" alt="">
         </div>
+        <section class="article-child" id="Project-container">
+          <div class="project-card">
+            <h1>Photos Album Project</h1>
+            <a
+              href="https://github.com/Gabriel-Sousa-Amorim/Album-de-Fotos/tree/Website"
+            >
+              <img
+                class="project-card-image"
+                src="./Assets/Album_de_fotos.png"
+                alt=""
+              />
+            </a>
+            <p>
+              Using only only HTML and CSS, I did a website where you can
+              increase the size an image by clicking it, The site is based on a
+              challenge purposed for a preparation for the Final Paper.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h1>Final Paper Project</h1>
+            <a href="https://github.com/Gabriel-Sousa-Amorim/TCC">
+              <img class="project-card-image" src="./Assets/TCC.png" alt="" />
+            </a>
+            <p>
+              This was the Final Paper of the
+              <em
+                style="cursor: pointer"
+                title="Instituto da Oportunidade Social"
+                >IOS</em
+              >
+              Web-Development course. The Website is based on a NGO that
+              redirects donations for people who stands on social vulnerability.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h1>Photos Album Project</h1>
+            <a
+              href="https://github.com/Gabriel-Sousa-Amorim/Album-de-Fotos/tree/Website"
+            >
+              <img
+                class="project-card-image"
+                src="./Assets/Album_de_fotos.png"
+                alt=""
+              />
+            </a>
+            <p>
+              Using only only HTML and CSS, I did a website where you can
+              upscale an image by clicking,
+            </p>
+          </div>
+        </section>
         <div class="article-child">
           <h1>Certifications</h1>
           <p class="justify-text">One of my certificates are on</p>
@@ -163,8 +193,9 @@
         ],
         typeSpeed: 100,
       };
+      //
 
-      var typed = new Typed(".heading-title", options);
+      var typed = new Typed("#heading-title", options);
     </script>
   </body>
 </html>
