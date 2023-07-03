@@ -119,8 +119,8 @@ select.second-container-child:focus-visible  {
     padding:4px;
     font-size: 25px;
     border-radius: 10px;
-    background-color: var(--color-blue);
-
+    background-color: var(--color-cyan);
+    color: var(--color-light-blue);
 }
 
 .main-margin {
@@ -129,7 +129,7 @@ select.second-container-child:focus-visible  {
 .justify-text {
     text-align: justify;
     text-justify: inter-word;
-    color: var(--color-cyan);
+    color: var(--color-white);
 }
 .article-container {
     display: flex;
@@ -199,7 +199,7 @@ select.second-container-child:focus-visible  {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    background-color: var(--color-blue);
+    background-color: var(--color-cyan);
     color: var(--color-black);
 }
 .Certificate-img {
@@ -242,6 +242,9 @@ select.second-container-child:focus-visible  {
         margin: 20px 50px;
     }
     #Project-container {
+        flex-direction: column;
+    }
+    .Certificate-container {
         flex-direction: column;
     }
 }
