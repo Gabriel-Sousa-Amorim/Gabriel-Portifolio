@@ -68,10 +68,10 @@ select.second-container-child {
     color: var(--color-cyan);
     padding: 5px;
     border-radius: 6px;
-    color-scheme: dark;
     border: 2px solid var(--color-cyan);
 }
 select.second-container-child:hover  {
+    background-color: var(--color-black);
     border-color: var(--color-light-blue);
     color: var(--color-light-blue);
 }
@@ -92,7 +92,7 @@ select.second-container-child:focus-visible  {
 
 #social-media-nav>a:hover {
     background-color: var(--color-light-blue);
-    color: var(--color-black);
+    color: var(--color-cyan);
     padding: 5px;
     border-radius: 5px;
     font-size: 35px;
@@ -205,6 +205,9 @@ select.second-container-child:focus-visible  {
 .Certificate-img {
     border-radius: 10px;
     width: 55%;
+}
+footer {
+    backdrop-filter: brightness(50%);
 }
 @media (max-width:850px) {
     #header-container {

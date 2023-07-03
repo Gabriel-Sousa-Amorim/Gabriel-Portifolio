@@ -154,11 +154,25 @@
         </details>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h1>Gabriel Sousa's Portfolio</h1>
+      <p></p>
+      <nav>
+        <ul>
+          <li><a class="bi bi-github" href="">GitHub</a></li>
+          <li><a class="bi bi-linkedin" href="">Linkedin</a></li>
+          <li><a class="bi bi-stack-overflow" href="">Stack-Overflow</a></li>
+          <li><a class="bi bi-envelope-at" href="">E-mail</a></li>
+          <li><a class="bi bi-telephone" href="">Telephone</a></li>
+        </ul>
+      </nav>
+      <p>&copy; All Rights Reserved / <span id="YearAtual"></span> </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       const atualDate = new Date();
       const birthDate = new Date("13 october 2004");
+      document.getElementById('YearAtual').textContent = atualDate.getFullYear()
       function getBirth() {
         if (atualDate.getMonth() < birthDate.getMonth()) {
           return atualDate.getFullYear() - birthDate.getFullYear() - 1;
