@@ -352,7 +352,7 @@ footer > div ul > li:hover, footer > div ul > li:hover > a {
     flex-basis: 100%;
   }
   .main-margin {
-    margin: 20px 50px;
+    margin: 20px 10px;
   }
   #Project-container {
     display: flex;
