@@ -1,6 +1,6 @@
 
 let date = new Date();
-let day = date.getDay()
+let day = date.getDay();
 let year = date.getFullYear();
 const birthDate = new Date("13 october 2004");
 
