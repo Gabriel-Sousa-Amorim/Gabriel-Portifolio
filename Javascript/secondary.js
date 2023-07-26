@@ -4,7 +4,7 @@ let day = date.getDay();
 let year = date.getFullYear();
 const birthDate = new Date("13 october 2004");
 
-document.getElementById("YearAtual").textContent = date.getFullYear();
+document.getElementById("YearAtual").innerHTML = date.getFullYear();
 
 function getBirth() {
     if (date.getMonth() < birthDate.getMonth()) {
@@ -14,7 +14,7 @@ function getBirth() {
     }
 }
 
-document.querySelector("span#span-idade").textContent = getBirth();
+document.querySelector("span#span-idade").innerHTML = getBirth();
 
 //Função para destacar o dia da semana atual;
 //Domingo == 0, Segunda == 1, Terça == 2...
@@ -104,7 +104,7 @@ LoadingDots()
 var options = {
     strings: [
         ":Hello World",
-        "<span class='bi bi-code-slash'>  I'm Gabriel Sousa <br>Front-end Developer.</span>",
+        "<span class='bi bi-code-slash'>  Eu sou Gabriel Sousa <br>Desenvolvedor Front-end.</span>",
     ],
     typeSpeed: 100,
 };
