@@ -195,12 +195,12 @@ select.second-container-child:focus-visible {
   filter: grayscale(1);
 }
 
-#list-container {
+.list-container {
   margin-inline: 0;
   display: flex;
   justify-content: space-between;
 }
-#list-container > ul {
+.list-container > ul {
   list-style: circle inside;
 }
 
@@ -351,8 +351,11 @@ footer > div ul > li:hover, footer > div ul > li:hover > a {
   .article-child {
     flex-basis: 100%;
   }
+  .list-container {
+    flex-direction: column;
+  }
   .main-margin {
-    margin: 20px 10px;
+    margin: 20px 40px;
   }
   #Project-container {
     display: flex;
